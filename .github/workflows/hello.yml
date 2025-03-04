@@ -12,9 +12,9 @@ jobs:
     
     steps:
       - name: Checout Repository
-        uses: action/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Read and Output hello.txt
         run: cat hello.txt
 
-        
+
