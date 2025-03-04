@@ -1,0 +1,20 @@
+name: Read hello.txt on Push
+
+on: 
+  push: 
+    branches:
+      - main
+
+jobs: 
+  read-file: 
+    runs-on: ubuntu-latest
+
+    
+    steps:
+      - name: Checout Repository
+        uses: action/checkout@v3
+
+      - name: Read and Output hello.txt
+        run: cat hello.txt
+
+        
